@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+
+#name {
+    font-size: 100px;
+    background: linear-gradient(90deg, rgba(105,246,30,1) 0%, rgba(29,175,253,1) 50%, rgba(73,66,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 10px 0 linear-gradient(90deg, rgba(4,10,70,1) 0%, rgba(29,39,253,1) 50%, rgba(69,179,252,1) 100%);   
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(105,246,30,1) 0%, rgba(29,175,253,1) 50%, rgba(73,66,255,1) 100%);
+}
+
+.center {
+    text-align: center;
+    margin: 15% 0px;
+}
+
+.main-btn {
+    margin: 20px 10px;
+}
+
+.main-btn:hover {
+    background: linear-gradient(90deg, rgba(105,246,30,1) 0%, rgba(29,175,253,1) 50%, rgba(73,66,255,1) 100%);
+    color: white;
+}
+
+/* Gallery */
+
+
+/* Project */
+
+.projects-container {
+    margin: 3% 10%;
+}
+
+.card {
+    text-align: center;
+    margin: 0 0%;
+    height: 100%;
+}
+
+.lokal-img {
+    margin: 0 20%;
+    width: 60%;
+}
+
+.lokal {
+    background-color: rgba(205, 255, 119, 0.887);
+}
+
+.odad-img {
+    margin: 18% 0;
+}
+
+.odad {
+    background-color: rgb(52, 56, 63);
+    color: white;
+}
