@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand" href="index.html">Akshat Adsule</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Projects</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="projects-container">
+        <div class="row">
+            <div class="col-lg-4 md-6 sm-12">
+                <div class="lokal card">
+                    <img src="img/lokal.png" class="card-img-top lokal-img" alt="lokal logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Lokal</h5>
+                        <p class="card-text">Lokal is a location based micro-blog platform. The posts you see are only from people around you, and your posts are visible people around you. Built with Express, MongoDB, bcrypt, EJS, and Bootstrap</p>
+                        <a href="https://lokal-media.herokuapp.com" class="btn btn-outline-dark">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12">
+                <div class="odad card">
+                    <img src="img/odad-logo.png" class="card-img-top odad-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">One Deed A Day</h5>
+                        <p class="card-text">Complete one deed a day to help out people in your community. Create and share deed for others to do, and collectively help out. Being buit with Express, MongoDB, bcrypt, EJS, and Bootstrap</p>
+                        <a href="https://one-deed-a-day.herokuapp.com" class="btn btn-outline-light">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 md-6 sm-12">
+                <div class="flashchat card">
+                    <img src="https://camo.githubusercontent.com/8b2cfa163a872b21a98952b1661379cdbcb86e65/68747470733a2f2f692e6962622e636f2f4a6e354737304a2f6c6f676f2e706e67" class="card-img-top lokal-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FlashChat</h5>
+                        <p class="card-text">FlashChat is a instant messaging app. FlashChat uses firebase for a realtime chat with other users. Built with Flutter, Firebase auth and Firestore</p>
+                        <a href="https://github.com/AkshatAdsule/FlashChat" class="btn btn-outline-dark">Look at the code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
