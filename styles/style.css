@@ -39,8 +39,11 @@ body {
 
 .card {
     text-align: center;
-    margin: 0 0%;
     height: 100%;
+}
+
+.card-div {
+    margin-bottom: 20px;
 }
 
 .lokal-img {
