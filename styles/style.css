@@ -23,8 +23,8 @@ body {
     font-size: 150px;
     background: linear-gradient(90deg, rgba(105,246,30,1) 0%, rgba(29,175,253,1) 50%, rgba(73,66,255,1) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 10px 10px 0 linear-gradient(90deg, rgba(4,10,70,1) 0%, rgba(29,39,253,1) 50%, rgba(69,179,252,1) 100%);   
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
 
 .navbar {
@@ -48,29 +48,6 @@ body {
 .main-btn:hover {
     background: linear-gradient(90deg, rgba(105,246,30,1) 0%, rgba(29,175,253,1) 50%, rgba(73,66,255,1) 100%);
     color: white;
-}
-
-/* Gallery */
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
 }
 
 /* Project */
