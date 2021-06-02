@@ -25,10 +25,11 @@ main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 .btn {
+	margin: 10px 10px;
 	color: white;
 	background-color: transparent;
 	padding: 10px 15px;
