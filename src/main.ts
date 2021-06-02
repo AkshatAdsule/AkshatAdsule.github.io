@@ -12,11 +12,14 @@ const camera = new THREE.PerspectiveCamera(
 	0.1,
 	1000
 );
+// Scale of objects based on window width
+let scale = 0.0035 * window.innerWidth;
 // Move camera back
-camera.position.z = 17;
+camera.position.z = scale * 3;
 
 const renderer = new THREE.WebGLRenderer({
 	canvas: document.querySelector<HTMLCanvasElement>("#bg")!,
+	antialias: true,
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -27,7 +30,7 @@ let nameObject: THREE.Group;
 loader.load(modelURL, function (model) {
 	console.log("Loaded model");
 	nameObject = model.scene;
-	nameObject.scale.set(5, 5, 5);
+	nameObject.scale.set(scale, scale, scale);
 	// rotate 90 degrees or pi/2 radians
 	nameObject.rotateX(Math.PI / 2);
 	scene.add(nameObject);
@@ -51,6 +54,17 @@ directionalLight.position.set(0, 0, -30);
 scene.add(directionalLight);
 
 scene.add(darkBluePointLight, lightBluePointLight, greenPointLight);
+
+renderer.render(scene, camera);
+
+// Handle window resize
+let handleResize = () => {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize(window.innerWidth, window.innerHeight);
+};
+
+window.onresize = handleResize;
 
 // Animation loop
 function animate() {
