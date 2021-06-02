@@ -1,7 +1,6 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-import modelURL from "/src/models/akshat.glb?url";
 import "./style.css";
 
 // Setup
@@ -27,7 +26,7 @@ const loader = new GLTFLoader();
 
 // Load name model
 let nameObject: THREE.Group;
-loader.load(modelURL, function (model) {
+loader.load("models/akshat.glb", function (model) {
 	console.log("Loaded model");
 	nameObject = model.scene;
 	nameObject.scale.set(scale, scale, scale);
