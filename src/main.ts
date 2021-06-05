@@ -9,7 +9,7 @@ const camera = new THREE.PerspectiveCamera(
 	75,
 	window.innerWidth / window.innerHeight,
 	0.1,
-	1000
+	2000
 );
 // Scale of objects based on window width
 let scale = 0.0035 * window.innerWidth;
