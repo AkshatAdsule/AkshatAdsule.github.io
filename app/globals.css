@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --gradiant-start: transparent(80%);
+  --gradiant-end: rgba(29, 78, 216, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +20,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(300px at 200px 100px, var(--gradiant-end) 0%, var(--gradiant-start) 100%);
 }
 
 @layer utilities {

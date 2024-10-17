@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        akshatSans: "var(--font-akshat-sans)",
+        spaceGrotesk: "var(--font-space-grotesk)",
+      },
     },
   },
   plugins: [],
