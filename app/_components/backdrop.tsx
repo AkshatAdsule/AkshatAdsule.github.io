@@ -7,13 +7,12 @@ type Position = [number, number];
 export function Backdrop() {
     const [position, setPosition] = React.useState<Position>([0, 0]);
 
-    const onMouseMove = (event: any) => {
+    const onMouseMove = (event: MouseEvent | WheelEvent) => {
         setPosition([event.pageX, event.pageY]);
     };
 
     React.useEffect(() => {
         document.addEventListener("mousemove", onMouseMove);
-        document.addEventListener("touchmove", onMouseMove);
         document.addEventListener("wheel", onMouseMove);
     }, []);
 
