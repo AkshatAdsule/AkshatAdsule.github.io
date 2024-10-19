@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply font-akshatSans text-5xl tracking-tight text-slate-200 sm:text-7xl;
+  }
+
+  h2 {
+    @apply font-spaceGrotesk mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
+  }
+
+  h3 {
+    @apply font-spaceGrotesk font-medium leading-snug text-slate-200;
+  }
+
+  p {
+    @apply mt-4 max-w-xs leading-normal;
+  }
+
+  section {
+    @apply mb-16 scroll-mt-16 lg:scroll-mt-24;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,7 +42,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  background: radial-gradient(300px at 200px 100px, var(--gradiant-end) 0%, var(--gradiant-start) 100%);
+  background: radial-gradient(
+    300px at 200px 100px,
+    var(--gradiant-end) 0%,
+    var(--gradiant-start) 100%
+  );
 }
 
 @layer utilities {

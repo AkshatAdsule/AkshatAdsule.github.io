@@ -1,9 +1,10 @@
 interface LinkProps {
     href: string;
     label: string;
+    children?: React.ReactNode;
 }
 
-export function Link({ href, label }: LinkProps) {
+export function Link({ href, label, children }: LinkProps) {
     return (
         <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
@@ -12,7 +13,7 @@ export function Link({ href, label }: LinkProps) {
             rel="noreferrer noopener"
             aria-label={`${label} (opens in a new tab)`}
         >
-            {label}
+            {children}
         </a>
     );
 }

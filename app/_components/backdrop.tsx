@@ -8,11 +8,13 @@ export function Backdrop() {
     const [position, setPosition] = React.useState<Position>([0, 0]);
 
     const onMouseMove = (event: any) => {
-        setPosition([event.clientX, event.clientY]);
+        setPosition([event.pageX, event.pageY]);
     };
 
     React.useEffect(() => {
         document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("touchmove", onMouseMove);
+        document.addEventListener("wheel", onMouseMove);
     }, []);
 
     return (
