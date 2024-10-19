@@ -43,7 +43,7 @@ export function ExperienceCard({ job }: ExperienceCardProps) {
                         </span>
                     </h3>
 
-                    <p className="mt-2 text-sm leading-normal text-left">
+                    <p className="mt-2 text-sm leading-normal text-left max-w-full">
                         {job.description}
                     </p>
 

@@ -2,7 +2,7 @@ export function Github() {
     return (
         <a
             className="block hover:text-slate-200"
-            href="https://github.com/bchiang7"
+            href="https://github.com/AkshatAdsule"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub (opens in a new tab)"

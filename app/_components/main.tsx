@@ -99,7 +99,7 @@ export function MainContent() {
                 >
                     large non-profit organization
                 </Link>{" "}
-                tracking horses in the wild and (currently) working at my
+                tracking horses in the wild. I'm currently working at my
                 school's{" "}
                 <Link
                     href="https://iet.ucdavis.edu/"
