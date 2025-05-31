@@ -1,16 +1,17 @@
 "use client"; // Make it a client component as hooks are used
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Github } from "./icons/github";
 import { LinkedIn } from "./icons/linkedin";
 
+// Define navItems outside the component because it's static
+const navItems = [
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  // Add other navigation items here if they exist or will be added
+];
+
 export function Header() {
   const [activeLink, setActiveLink] = useState("#about"); // Assuming '#about' is the first section
-
-  const navItems = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    // Add other navigation items here if they exist or will be added
-  ];
 
   const handleLinkClick = (href: string) => {
     setActiveLink(href);
@@ -47,7 +48,7 @@ export function Header() {
         }
       });
     };
-  }, []); // navItems can be added to dependency array if it's not static
+  }, []); // navItems is defined outside the component, so it's stable
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
