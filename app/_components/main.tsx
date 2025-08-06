@@ -1,6 +1,8 @@
 import { Link } from "./common/link";
 import { ExperienceCard, JobDetails } from "./experience-card";
 import { Arrow } from "./icons/arrow";
+import { ProjectCard, ProjectDetails } from "./project-card";
+import { PhotoGallery } from "./photo-gallery";
 
 export function MainContent() {
   const jobs: JobDetails[] = [
@@ -67,6 +69,21 @@ export function MainContent() {
     },
   ];
 
+  const projects: ProjectDetails[] = [
+    {
+      name: "Project 1",
+      description: "This is a description of my first project.",
+      projectLink: "#",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    },
+    {
+      name: "Project 2",
+      description: "This is a description of my second project.",
+      projectLink: "#",
+      techStack: ["Python", "Flask", "SQLAlchemy"],
+    },
+  ];
+
   return (
     <main className="pt-24 lg:w-3/4 lg:py-24">
       <section id="about">
@@ -110,6 +127,20 @@ export function MainContent() {
             View my full Resume <Arrow />
           </Link>
         </div>
+      </section>
+
+      <section id="projects">
+        <h2 className="text-2xl font-bold mb-4">Projects</h2>
+        <ol className="group/list">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </ol>
+      </section>
+
+      <section id="photos">
+        <h2 className="text-2xl font-bold mb-4">Photos</h2>
+        <PhotoGallery />
       </section>
     </main>
   );
