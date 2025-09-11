@@ -10,8 +10,27 @@ export function MainContent() {
       companyLink: "https://www.veeva.com/",
       startDate: "June 2025",
       endDate: "Sept 2025",
-      description: <>To be updated...</>,
-      techStack: [],
+      description: (
+        <>
+          - Contributed to Veeva’s Electronic Data Capture (EDC) application, a
+          platform for collecting, reviewing, and validating clinical study data
+          <br />
+          - Resolved 30+ software defects across the application, improving
+          system stability and reliability
+          <br />
+          - Developed new features to support file uploads, integration of
+          externally sourced data, and ingestion of lab-collected data
+        </>
+      ),
+      techStack: [
+        "Java",
+        "React",
+        "JavaScript",
+        "SCSS",
+        "MySQL",
+        "Git",
+        "Jira",
+      ],
     },
     {
       role: "Student Application Developer",
@@ -24,13 +43,14 @@ export function MainContent() {
           - Worked with students and senior developers to maintain MyInfoVault,
           an all-encompassing platform for academic personnel
           <br />
-          - Developed 10+ new features in a complex and mature Java Spring web
+          - Developed new features in a complex and mature Java Spring web
           application as per the needs of actual users
-          <br />- Collaborated on an ongoing UI refresh and transitioned
-          existing JSP pages to modern technologies such as Vue.js and Angular
+          <br />
+          - Collaborated on an ongoing UI refresh and transitioned existing JSP
+          pages to modern technologies such as React
         </>
       ),
-      techStack: ["Java", "Spring", "Vue.js", "Angular", "MariaDB", "Jira"],
+      techStack: ["Java", "Spring", "React", "MariaDB", "Jira"],
     },
 
     {
@@ -92,7 +112,15 @@ export function MainContent() {
         >
           large non-profit organization
         </Link>{" "}
-        tracking horses in the wild. I'm currently working at my school's{" "}
+        tracking horses in the wild, and contributed to{" "}
+        <Link
+          href="https://www.veeva.com/products/veeva-edc/"
+          label="Veeva Systems"
+        >
+          Veeva’s Electronic Data Capture (EDC) platform
+        </Link>{" "}
+        improving clinical data collection and validation processes. I'm
+        currently working at my school's{" "}
         <Link href="https://iet.ucdavis.edu/" label="university">
           IT department
         </Link>
@@ -101,9 +129,7 @@ export function MainContent() {
 
       <section id="experience">
         <ol className="group/list">
-          {jobs.map((job, index) => (
-            <ExperienceCard key={index} job={job} />
-          ))}
+          {jobs.map((job, index) => <ExperienceCard key={index} job={job} />)}
         </ol>
         <div className="mt-12 text-center">
           <Link href="/resume.pdf" label="View my full Resume">
