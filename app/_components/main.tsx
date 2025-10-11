@@ -14,8 +14,9 @@ export function MainContent() {
         <>
           - Contributed to Veeva’s Electronic Data Capture (EDC) application, a
           platform for collecting, reviewing, and validating clinical study data
-          <br />- Resolved 30+ software defects across the application,
-          improving system stability and reliability
+          <br />
+          - Resolved 30+ software defects across the application, improving
+          system stability and reliability
           <br />- Developed new features to support file uploads, integration of
           externally sourced data, and ingestion of lab-collected data
         </>
@@ -40,7 +41,8 @@ export function MainContent() {
         <>
           - Worked with students and senior developers to maintain MyInfoVault,
           an all-encompassing platform for academic personnel
-          <br />- Developed new features in a complex and mature Java Spring web
+          <br />
+          - Developed new features in a complex and mature Java Spring web
           application as per the needs of actual users
           <br />- Collaborated on an ongoing UI refresh and transitioned
           existing JSP pages to modern technologies such as React
@@ -86,20 +88,13 @@ export function MainContent() {
     <main className="pt-24 lg:w-3/4 lg:py-24">
       <section id="about">
         Since I was a kid, I've always been fascinated by technology. I started
-        coding in middle school and have been hooked ever since. I'm currently a
-        student at UC Davis studying computer science. I've worked on a variety
-        of projects with vastly different technologies and teams. In the past,
-        I've built robots with my{" "}
+        programming in middle school and have been hooked ever since. I'm
+        currently a student at UC Davis studying computer science and
+        enginnering. I've worked on a variety of projects with different
+        technologies and teams. In the past, I've built robots with my{" "}
         <Link href="https://homesteadrobotics.com/" label="robotics team">
           Robotics Team
         </Link>
-        , helped launch a{" "}
-        <Link
-          href="https://www.instagram.com/thesteamorg/"
-          label="ed-tech startup"
-        >
-          ed-tech startup
-        </Link>{" "}
         , interned at a{" "}
         <Link
           href="https://home.americanwildhorse.org/"
@@ -118,6 +113,11 @@ export function MainContent() {
         currently working at my school's{" "}
         <Link href="https://iet.ucdavis.edu/" label="university">
           IT department
+        </Link>
+        . Outside of my responsibilities, I also enjoy photography. You can find
+        some of my favorite shots over on my{" "}
+        <Link href="https://photos.aksads.tech/" label="Photo Gallery">
+          photo gallery
         </Link>
         .
       </section>
