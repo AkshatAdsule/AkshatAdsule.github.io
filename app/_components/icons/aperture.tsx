@@ -6,7 +6,7 @@ export function Aperture() {
       target="_blank"
       rel="noreferrer noopener"
       aria-label="My Photo Gallery (opens in a new tab)"
-      title="GitHub"
+      title="Gallery"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
