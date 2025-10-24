@@ -23,6 +23,9 @@ export function Header() {
           <li className="mr-5 text-xs shrink-0">
             <Aperture />
           </li>
+          <li className="mr-5 text-xs shrink-0">
+            <Unsplash />
+          </li>
         </ul>
         <nav className="nav hidden lg:block">
           <ul className="mt-16 w-max">
