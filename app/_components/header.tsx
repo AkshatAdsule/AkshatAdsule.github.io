@@ -1,6 +1,7 @@
 import { Aperture } from "./icons/aperture";
 import { Github } from "./icons/github";
 import { LinkedIn } from "./icons/linkedin";
+import { Unsplash } from "./icons/unsplash";
 
 export function Header() {
   return (
@@ -18,6 +19,9 @@ export function Header() {
           </li>
           <li className="mr-5 text-xs shrink-0">
             <LinkedIn />
+          </li>
+          <li className="mr-5 text-xs shrink-0">
+            <Unsplash />
           </li>
           <li className="mr-5 text-xs shrink-0">
             <Aperture />
