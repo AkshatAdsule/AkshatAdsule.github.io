@@ -5,6 +5,15 @@ import { Arrow } from "./icons/arrow";
 export function MainContent() {
   const jobs: JobDetails[] = [
     {
+      role: "Associate Software Engineer",
+      company: "Veeva Systems",
+      companyLink: "https://www.veeva.com/",
+      startDate: "August 2026",
+      endDate: "?",
+      description: <>To be updated...</>,
+      techStack: [],
+    },
+    {
       role: "Software Engineering Intern",
       company: "Veeva Systems",
       companyLink: "https://www.veeva.com/",
