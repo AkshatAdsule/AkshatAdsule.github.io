@@ -3,54 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply font-akshatSans text-5xl tracking-tight text-slate-200 sm:text-7xl;
-  }
+	h1 {
+		@apply font-akshatSans text-5xl tracking-tight text-slate-200 sm:text-7xl;
+	}
 
-  h2 {
-    @apply font-spaceGrotesk mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
-  }
+	h2 {
+		@apply font-spaceGrotesk mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
+	}
 
-  h3 {
-    @apply font-spaceGrotesk font-medium leading-snug text-slate-200;
-  }
+	h3 {
+		@apply font-spaceGrotesk font-medium leading-snug text-slate-200;
+	}
 
-  p {
-    @apply mt-4 max-w-xs leading-normal;
-  }
+	p {
+		@apply mt-4 max-w-xs leading-normal;
+	}
 
-  section {
-    @apply mb-16 scroll-mt-16 lg:scroll-mt-24;
-  }
+	section {
+		@apply mb-16 scroll-mt-16 lg:scroll-mt-24;
+	}
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 
-  --gradiant-start: transparent(80%);
-  --gradiant-end: rgba(29, 78, 216, 0.15);
+	--gradiant-start: transparent(80%);
+	--gradiant-end: rgba(29, 78, 216, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  background: radial-gradient(
-    300px at 200px 100px,
-    var(--gradiant-end) 0%,
-    var(--gradiant-start) 100%
-  );
+	color: var(--foreground);
+	background: var(--background);
+	background: radial-gradient(
+		300px at 200px 100px,
+		var(--gradiant-end) 0%,
+		var(--gradiant-start) 100%
+	);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
